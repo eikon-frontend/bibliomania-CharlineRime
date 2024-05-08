@@ -1,32 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- 🦊 Votre page ici -->
+
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+  <!--
+  <select class="star-rating" aria-label="Note utilisateur">
+    <option value="">Select a rating</option>
+    <option value="5">Excellent</option>
+    <option value="4">Very Good</option>
+    <option value="3">Average</option>
+    <option value="2">Poor</option>
+    <option value="1">Terrible</option>
+  </select>
+-->
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+
+
+
+  <div class="header">
+    <button><img class="back" src="img/back_arrow.png" alt="Retour" /></button>
+    <img class="logo" src="img/logo_book.png" alt="logo" />
+  </div>
+
+
+
+  <div class="SearchBar">
+    <button><img class="loupe" src="img/loupe_button.png" alt="loupe" /></button>
+    <button><img class="filtre" src="img/filtre_button.png" alt="filtre" /></button>
+  </div>
+
+
+
+
+  <div class="darkbrown_background">
+    <div class="partie_titre1">
+      <div class="boutons_titre1">
+        <button><img class="lu" src="img/plus.png" alt="Marquer comme lu" /></button>
+        <button><img class="a_lire" src="img/ticks.png" alt="Marquer comme à lire" /></button>
+      </div>
+      <h1>Du même bois</h1>
+    </div>
+
+
+
+
+    <div class="img_infos">
+
+      <img class="lu" src="img/couvertures/du_meme_bois_couverture.png" alt="Marquer comme lu" />
+
+      <div class="info_book">
+        <p>Marion Fayolle </p>
+        <p>Roman </p>
+        <p>Editions Gallimard</p>
+        <p>2024</p>
+        <img src="img/stars_rating.png" alt="Rating" />
+
+      </div>
+    </div>
+
+
+    <p class="description">Les enfants, surnommés les "petitous", portent en eux un mélange de leurs ancêtres, une
+      richesse d'histoires et
+      d'influences. Dans une ferme, cette tradition se perpétue de génération en génération, avec une intimité partagée
+      entre les humains et les bêtes. </p>
+
+    <div class="add_comment">
+
+      <div class="user_name">
+        <img class="pp" src="img/pp.png" alt="Profile picture" />
+        <p>sarah.paile</p>
+        <div class="rating-comment"><select class="star-rating " aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
             <option value="4">Very Good</option>
             <option value="3">Average</option>
             <option value="2">Poor</option>
             <option value="1">Terrible</option>
-        </select>
-    -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+          </select>
+        </div>
+      </div>
+
+
+      <p class="CPlace"> Ajouter un commentaire</p>
+
+    </div>
+
+    <div class="SideBySide">
+
+      <div class="comments_place">
+        <div class="comment">
+          <div class="user_name">
+            <img class="pp" src="img/pp.png" alt="Profile picture" />
+            <p>charline.rime</p>
+
+          </div>
+
+          <img class="CommentFont" src="img/stars_charline.png" alt="Charline's rating" />
+          <p class="CommentFont">
+            Ce livre est un conte
+            poétique et pilosophique qui explore
+            la quête de sens dans la vie.
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="SideBySide">
+      <div class="comments_place">
+        <div class="comment">
+
+          <div class="user_name">
+            <img class="pp" src="img/pp.png" alt="Profile picture" />
+            <p>oscar.tomasetti</p>
+          </div>
+
+          <img class="CommentFont" src="img/stars_oscar.png" alt="Oscar's's rating" />
+          <p class="CommentFont">Oh, j'ai entendu parler de ce livre et ça semble tout aussi mauvais que prévu...</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class="footer">
+
+
+    <button><img class="footer_button" src="img/house_button.png" alt="Accueuil" /></button>
+    <button><img class="footer_button" src="img/bell_button.png" alt="Notifications" /></button>
+    <button><img class="footer_button" src="img/book_button.png" alt="Collections" /></button>
+    <button><img class="footer_button" src="img/profil_button.png" alt="Profil" /></button>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+
+
+
+</body>
+
 </html>
